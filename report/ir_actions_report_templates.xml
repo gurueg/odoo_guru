@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="report_saleorder_document_inherited" inherit_id="sale.report_saleorder_document">
+    <xpath expr="//div[@id='informations']" position="after">
+        <div class="col-auto col-3 mw-100 mb-2" name="informations_test">
+            <p t-if="doc.test">
+                <p class="m-0" t-field="doc.test"/>
+            </p>
+            <p t-else="">Поле test пустое!!!</p> 
+        </div>
+    </xpath>
+</template>
+</odoo>
